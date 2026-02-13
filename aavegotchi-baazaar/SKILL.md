@@ -1,6 +1,31 @@
 ---
 name: aavegotchi-baazaar
-description: View, add, and execute Aavegotchi Baazaar listings on Base mainnet (8453). Buy with GHST directly or buy with USDC using swapAndBuy*. Safety-first: dryRun defaults true (simulate with cast call; only broadcast with cast send when dryRun=false / DRY_RUN=0).
+description: >
+  View, add, and execute Aavegotchi Baazaar listings on Base mainnet (8453).
+  Buy with GHST directly or buy with USDC using swapAndBuy*.
+  Safety-first: dryRun defaults true (simulate with cast call; only broadcast with cast send when dryRun=false / DRY_RUN=0).
+homepage: https://github.com/aavegotchi/aavegotchi-baazaar-skill
+metadata:
+  openclaw:
+    requires:
+      bins:
+        - cast
+        - curl
+        - python3
+      env:
+        - FROM_ADDRESS
+        - PRIVATE_KEY
+        - BASE_MAINNET_RPC
+        - RECIPIENT_ADDRESS
+        - DRY_RUN
+        - SLIPPAGE_PCT
+        - PAYMENT_FEE_PCT_USDC
+        - GHST_USD_PRICE
+        - DIAMOND
+        - GHST
+        - USDC
+        - SUBGRAPH_URL
+    primaryEnv: PRIVATE_KEY
 ---
 
 ## Safety Rules
