@@ -13,3 +13,12 @@ Skill contents:
 Install targets (kept in sync separately):
 - Local (Clawd): `/Users/coderdan/Documents/GitHub/clawd-workspace/skills/aavegotchi-baazaar/`
 - VPS (OpenClaw): `/home/agent/.openclaw/skills/aavegotchi-baazaar/`
+
+## Optional Secure Alternative: Coinbase CDP Server Wallet
+
+This repo still documents and supports the current private-key broadcast flow.
+
+For teams that want policy-controlled server signing and no raw private key in `.env`, see:
+- `aavegotchi-baazaar/references/cdp-integration.md`
+
+This is docs-only integration guidance, not a hard runtime migration.

@@ -321,3 +321,12 @@ ERC1155 list (simulate):
 - `ERC1155Marketplace: Not approved` / approval errors: missing `setApprovalForAll` for listing, or missing ERC20 `approve` for buying.
 - Swap errors (e.g. `LibTokenSwap: swapAmount must be > 0`): bad swapAmount math or missing inputs.
 - Listing cancelled/sold or price changed: refetch from subgraph and re-simulate before broadcasting.
+
+## Optional: Integrate Coinbase CDP Server Wallet (No PRIVATE_KEY in .env)
+
+This skill currently supports the existing `cast send --private-key` flow documented above.
+
+If you want a hardened alternative with no raw private key in `.env`, follow:
+- `references/cdp-integration.md`
+
+That guide covers encrypted credential files (`CDP_CREDENTIALS_PATH`), import-vs-create wallet setup, policy allowlists, and a two-step prepare/execute intent pattern.
